@@ -6,14 +6,14 @@ export default function Support() {
  return (
    <div className="section">
     
-    <p id="support-section" class="scroll-point"/>
+    <p id="support-section" className="scroll-point"/>
 
      <div style={{
         "width" : 50 + '%',
         "float": "right"
      }}>
      <h1>Support</h1>
-     <p>We are a hack-a-thon coming to Tucson, Arizona!</p>
+     <p>We always welcome support! If you would like to volunteer, sponsor, or assist us in any way please connect with us. Contact us with questions or concerns.</p>
      </div>
      
      <img src={logo} alt="HackZona Logo" style={{

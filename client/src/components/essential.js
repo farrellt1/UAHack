@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useRef }  from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from '../assets/hackzona-logo.jpeg'
  
 export default function Essential() {
+
  return (
    <div className="section">
     
-    <p id="essential-section" class="scroll-point"/>
+    <p id="essential-section" className="scroll-point"/>
 
      <div style={{
         "width" : 50 + '%',
         "float": "right"
      }}>
      <h1>Essentials</h1>
-     <p>We are a hack-a-thon coming to Tucson, Arizona!</p>
+     <p>Here is everything you need to know about the event:</p>
      </div>
      
      <img src={logo} alt="HackZona Logo" style={{
