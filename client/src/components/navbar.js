@@ -5,17 +5,17 @@ import "bootstrap/dist/css/bootstrap.css";
  
 // We import NavLink to utilize the react router.
 import { NavLink } from "react-router-dom";
-
-import logo from '../images/hackzona-logo-400.jpeg'
  
 // Here, we display our Navbar
 export default function Navbar() {
  return (
-   <div>
-     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+   <div >
+     <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" >
+
        <NavLink className="navbar-brand" to="/">
-       <img style={{"width" : 25 + '%', "marginLeft" : 5}} src={logo}></img>
+       HackZona
        </NavLink>
+       
        <button
          className="navbar-toggler"
          type="button"
@@ -29,14 +29,25 @@ export default function Navbar() {
        </button>
  
        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul className="navbar-nav ml-auto">
-           <li className="nav-item">
-             <NavLink className="nav-link" to="/create">
-               Create Record
-             </NavLink>
+         <ul className="navbar-nav">
+            <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+             <a className="nav-link" href="#welcome-section" >
+               Welcome
+             </a>
+           </li>
+           <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+             <a className="nav-link" href="#essential-section">
+               Essentials
+             </a>
+           </li>
+           <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+             <a className="nav-link" href="#support-section">
+               Support
+             </a>
            </li>
          </ul>
        </div>
+       
      </nav>
    </div>
  );
