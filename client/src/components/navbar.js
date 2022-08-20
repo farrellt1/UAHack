@@ -31,18 +31,23 @@ export default function Navbar() {
        <div className="collapse navbar-collapse" id="navbarSupportedContent">
          <ul className="navbar-nav">
             <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-             <a className="nav-link" href="#welcome-section" >
+             <a className="nav-link" href="/#welcome-section" >
                Welcome
              </a>
            </li>
            <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-             <a className="nav-link" href="#essential-section">
+             <a className="nav-link" href="/#essential-section">
                Essentials
              </a>
            </li>
            <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-             <a className="nav-link" href="#support-section">
+             <a className="nav-link" href="/#support-section">
                Support
+             </a>
+           </li>
+           <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+             <a className="nav-link" href="/forum">
+               Forum
              </a>
            </li>
          </ul>
